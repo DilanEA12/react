@@ -3,8 +3,7 @@
   background: #8a4f2e;
   padding: 12px;
   display: flex;
-  justify-content: center;
-  gap: 200px;
+  justify-content: space-around;
   box-shadow: 0 3px 8px rgba(0,0,0,0.2);
 }
 
