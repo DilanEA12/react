@@ -1,41 +1,38 @@
-body {
+/* -------- RESET BÁSICO -------- */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* -------- TIPOGRAFÍA -------- */
+body {
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: #fdf8f4;
+  color: #3a2a23;
+  line-height: 1.5;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-li {
-  color: #dd4747;
-  justify-content: center;
-  text-align: center;
-  list-style: none;
-  display: inline-block;
-  padding-left: 200px;
-  padding-right: 200px;
-}
-
-li :hover {
-  background-color: #dd4747;
-  padding: 10px;
-  transition: 0.5s ;
-}
-
+/* -------- ENLACES -------- */
 a {
   text-decoration: none;
-  color: black;
-  border-radius: 10px;
+  color: inherit;
 }
 
-a :hover {
-  background-color: red;
-  color: white;
-  padding: 10px;
-  transition: 0.5s ;
+/* -------- TITULOS -------- */
+h1, h2, h3 {
+  font-weight: 700;
+  color: #4e342e;
 }
+
+/* -------- LISTAS -------- */
+ul {
+  list-style: none;
+}
+
+/* -------- CONTENEDORES GENERALES -------- */
+main {
+  padding: 20px;
+}
+
