@@ -58,17 +58,6 @@
 
 /* Hero */
 .hero {
-  background-image: url("../public/Image/restaurante.jpg"); 
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  text-align: center;
-  padding: 80px 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-}
-
-.hero {
   position: relative;
   background-image: url("../public/Image/restaurante.jpg");
   background-size: cover;
