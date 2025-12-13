@@ -10,20 +10,27 @@ function App() {
 
   return (
     <>
-      <nav className="navbar">
-        <button onClick={() => setPage("Inicio")}>Inicio</button>
-        <button onClick={() => setPage("menu")}>Menú</button>
-        <button onClick={() => setPage("nosotros")}>Nosotros</button>
-        <button onClick={() => setPage("contacto")}>Contacto</button>
-      </nav>
+      <header className="header">
+        <span className="brand">Restaurante Sabor Andino</span>
 
-      {page === "Inicio" && <Inicio />}
-      {page === "menu" && <Menu />}
-      {page === "nosotros" && <Nosotros />}
-      {page === "contacto" && <Contacto />}
+        <nav className="navbar">
+          <button onClick={() => setPage("Inicio")}>Inicio</button>
+          <button onClick={() => setPage("menu")}>Menú</button>
+          <button onClick={() => setPage("nosotros")}>Nosotros</button>
+          <button onClick={() => setPage("contacto")}>Contacto</button>
+        </nav>
+      </header>
+
+      <main>
+        {page === "Inicio" && <Inicio />}
+        {page === "menu" && <Menu />}
+        {page === "nosotros" && <Nosotros />}
+        {page === "contacto" && <Contacto />}
+      </main>
     </>
   );
 }
 
 export default App;
+
 
