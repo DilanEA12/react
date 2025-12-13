@@ -1,10 +1,13 @@
-function inicio() {
+function Inicio() {
   return (
-    <section className="home-container">
-      <h1>Restaurante </h1>
-      <p>Este es tu negocio, describe tu concepto aquí.</p>
+    <section className="seccion hero">
+      <h1>Bienvenido a Sabor Andino</h1>
+      <p>Platos tradicionales colombianos con un toque moderno.</p>
+      <button className="button-cta" >
+        Ver Menú
+      </button>
     </section>
   );
 }
 
-export default inicio;
+export default Inicio

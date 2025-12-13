@@ -1,73 +1,148 @@
-/* -------- NAVBAR -------- */
-.navbar {
-  background: #8a4f2e;
-  padding: 12px;
-  display: flex;
-  justify-content: space-around;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+/* Contenedor principal */
+.site-wrapper {
+  max-width: 960px;
+  margin: 24px auto;
+  padding: 0 16px;
 }
 
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  gap: 40px;              
+  background: #6b4f4f;
+  padding: 12px 0;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+}
+
+.brand {
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 16px; 
+}
+
+/* Botones del navbar */
 .navbar button {
-  background: #f4e9d8;
+  background: #f5e0d3;
   border: none;
-  padding: 10px 18px;
+  padding: 8px 14px;
   border-radius: 6px;
   cursor: pointer;
-  font-size: 16px;
-  color: #6a3b22;
-  font-weight: bold;
-  transition: 0.2s;
+  font-size: 15px;
+  color: #5a3a3a;
+  font-weight: 600;
+  transition: transform 0.12s ease, background 0.12s ease;
 }
 
 .navbar button:hover {
-  background: #fff3d4;
-  transform: scale(1.08);
+  background: #ffe6cc;
+  transform: translateY(-2px);
 }
 
-/* -------- HOME -------- */
-.home-container  {
-  text-align: center;
+/* Secciones */
+.seccion {
+  background: #fff5eb;
+  border-radius: 12px;
+  padding: 36px;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  min-height: 260px;
 }
 
+/* Hero */
 .hero {
-  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+  background-image: url("../public/Image/restaurante.jpg"); 
   background-size: cover;
   background-position: center;
+  color: #fff;
+  text-align: center;
   padding: 80px 20px;
   border-radius: 12px;
-  color: white;
-  margin-bottom: 30px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 .hero h1 {
-  font-size: 36px;
+  font-size: 38px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
 }
 
 .hero p {
-  font-size: 18px;
+  font-size: 20px;
+  margin: 12px 0;
 }
 
-/* -------- MENÚ -------- */
-.seccion ul li {
-  background: #fff8ef;
-  margin: 10px 0;
-  padding: 15px;
+/* Botón destacado */
+.button-cta {
+  background: #d96c4f;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
   border-radius: 8px;
-  font-size: 18px;
-  border-left: 5px solid #bc6c25;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
 }
 
-/* -------- NOSOTROS -------- */
-.seccion p {
-  max-width: 600px;
-  margin: 0 auto;
-  font-size: 18px;
+.button-cta:hover {
+  background: #e8846b;
+  transform: scale(1.05);
 }
 
-/* -------- CONTACTO -------- */
-.seccion p {
-  font-size: 18px;
-  margin: 8px 0;
+/* Menu */
+.menu-list {
+  margin-top: 18px;
+  display: grid;
+  gap: 10px;
 }
 
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  border-radius: 10px;
+  background: #fffaf4;
+  border-left: 4px solid #a66b4f;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
 
+.menu-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.contact-form button {
+  width: 120px;
+  align-self: flex-start;
+}
+
+/* Responsividad */
+@media (max-width: 640px) {
+  .nav-actions { gap: 8px; }
+  .navbar button { padding: 8px 10px; font-size: 14px; }
+  .seccion { padding: 20px; margin: 14px 10px; border-radius: 8px; }
+  .site-wrapper { padding: 0 10px; }
+}
