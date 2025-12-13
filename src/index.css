@@ -9,8 +9,8 @@
 body {
   font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
     sans-serif;
-  background: #fdf8f4;
-  color: #3a2a23;
+  background: #FFFACD;
+  color: #004D40;
   line-height: 1.5;
 }
 
@@ -23,7 +23,7 @@ a {
 /* -------- TITULOS -------- */
 h1, h2, h3 {
   font-weight: 700;
-  color: #4e342e;
+  color: #00796B;
 }
 
 /* -------- LISTAS -------- */
