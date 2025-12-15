@@ -8,9 +8,9 @@ function Menu() {
   return (
     <section className="seccion">
       <h1>Menú</h1>
-      <div className="menu-list">
+      <div className="menuLista">
         {platos.map((plato, i) => (
-          <div key={i} className="menu-item">
+          <div key={i} className="menuPlatos">
             <img src={plato.img} alt={plato.nombre} width="60" height="60" />
             <span>{plato.nombre}</span>
             <span>{plato.precio}</span>

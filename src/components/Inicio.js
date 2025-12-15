@@ -4,7 +4,7 @@ function Inicio({ setPage }) {
       <h1>Bienvenido a Sabor Andino</h1>
       <p>Platos tradicionales colombianos con un toque moderno.</p>
 
-      <button className="button-cta" onClick={() => setPage("menu")}>
+      <button className="botones" onClick={() => setPage("menu")}>
         Ver Menú
       </button>
     </section>

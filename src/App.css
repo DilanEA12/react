@@ -1,19 +1,18 @@
 /* Contenedor principal */
-.site-wrapper {
-  max-width: 960px;
+.marcoPrincipal {
   margin: 24px auto;
   padding: 0 16px;
 }
 
 /* Header */
-.header {
+.encabezado {
   background: #00796B;
   padding: 28px 0;
   box-shadow: 0 3px 8px rgb(0, 0, 0);
   text-align: center;
 }
 
-.header .brand {
+.encabezado .titulo {
   display: block;
   color: #FFD700;
   font-weight: 800;
@@ -25,7 +24,7 @@
 
 /* Navbar */
 
-.navbar {
+.barraNavegacion {
   display: flex;
   justify-content: space-around; 
   align-items: center;
@@ -34,19 +33,14 @@
   padding: 12px 0;
 }
 
-.brand {
+.tirulo {
   color: #fff;
   font-weight: 700;
   font-size: 18px;
 }
 
-.nav-actions {
-  display: flex;
-  gap: 16px; 
-}
-
 /* Botones del navbar */
-.navbar button {
+.barraNavegacion button {
   background: #FFD700;
   border: none;
   padding: 8px 14px;
@@ -58,7 +52,7 @@
   transition: transform 0.12s ease, background 0.12s ease;
 }
 
-.navbar button:hover {
+.barraNavegacion button:hover {
   background: #FFC300;
   transform: translateY(-2px);
 }
@@ -102,7 +96,7 @@
 
 .hero h1,
 .hero p, 
-.button-cta{
+.botones{
   position: relative;
   z-index: 2;
 }
@@ -122,7 +116,7 @@
 }
 
 /* Botón destacado */
-.button-cta {
+.botones {
   background: #FF6B35;
   color: #fff;
   border: none;
@@ -133,51 +127,52 @@
   transition: 0.2s;
 }
 
-.button-cta:hover {
+.botones:hover {
   background: #FF8C42;
   transform: scale(1.05);
 }
 
 /* Menu */
-.menu-list {
+.menuLista {
   margin-top: 18px;
   display: grid;
   gap: 10px;
 }
 
-.menu-item {
+.menuPlatos {
   display: flex;
   align-items: center;
   gap: 12px;
   padding: 14px;
   border-radius: 10px;
+  cursor: pointer;
   background: #B2DFDB;
   border-left: 4px solid #FF6B35;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-.menu-item:hover {
+.menuPlatos:hover {
   transform: translateY(-3px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.12);
 }
 
 /* Contact Form */
-.contact-form {
+.contactoFormulario {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-.contact-form input,
-.contact-form textarea {
+.contactoFormulario input,
+.contactoFormulario textarea {
   padding: 10px;
   border-radius: 8px;
   border: 1px solid #ccc;
   font-size: 15px;
 }
 
-.contact-form button {
+.contactoFormulario button {
   width: 120px;
   align-self: flex-start;
 }

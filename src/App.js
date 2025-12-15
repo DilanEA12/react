@@ -9,11 +9,11 @@ function App() {
   const [page, setPage] = useState("Inicio");
 
   return (
-    <>
-      <header className="header">
-        <span className="brand">Restaurante Sabor Andino</span>
+    <div className="marcoPrincipal">
+      <header className="encabezado">
+        <span className="titulo">Restaurante Sabor Andino</span>
 
-        <nav className="navbar">
+        <nav className="barraNavegacion">
           <button onClick={() => setPage("Inicio")}>Inicio</button>
           <button onClick={() => setPage("menu")}>Menú</button>
           <button onClick={() => setPage("nosotros")}>Nosotros</button>
@@ -27,7 +27,7 @@ function App() {
         {page === "nosotros" && <Nosotros />}
         {page === "contacto" && <Contacto />}
       </main>
-    </>
+    </div>
   );
 }
 
