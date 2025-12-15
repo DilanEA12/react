@@ -22,7 +22,7 @@ function App() {
       </header>
 
       <main>
-        {page === "Inicio" && <Inicio />}
+        {page === "Inicio" && <Inicio setPage={setPage} />}
         {page === "menu" && <Menu />}
         {page === "nosotros" && <Nosotros />}
         {page === "contacto" && <Contacto />}
