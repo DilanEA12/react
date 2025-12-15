@@ -33,7 +33,7 @@
   padding: 12px 0;
 }
 
-.tirulo {
+.titulo {
   color: #fff;
   font-weight: 700;
   font-size: 18px;
@@ -179,8 +179,8 @@
 
 /* Responsividad */
 @media (max-width: 640px) {
-  .nav-actions { gap: 8px; }
-  .navbar button { padding: 8px 10px; font-size: 14px; }
+  .barraNavegacion { gap: 8px; }
+  .barraNavegacion button { padding: 8px 10px; font-size: 14px; }
   .seccion { padding: 20px; margin: 14px 10px; border-radius: 8px; }
-  .site-wrapper { padding: 0 10px; }
+  .marcoPrincipal { padding: 0 10px; }
 }
